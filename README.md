@@ -18,3 +18,9 @@ Apply the fontSize property to the textarea element.
 
 Demo video:-
 <video src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/e449406acecb4a1186ae9cc77a55933f.mp4" controls autoplay muted>
+
+API Key (v3 auth)
+a468a5e2bdc8721c32a4a6e17a40f130
+
+Example API Request
+https://api.themoviedb.org/3/movie/550?api_key=a468a5e2bdc8721c32a4a6e17a40f130

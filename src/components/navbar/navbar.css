@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #58595B;
+    height: 50px;
+    display: flex;
+}
+
+img {
+    height: 50px;
+  }
