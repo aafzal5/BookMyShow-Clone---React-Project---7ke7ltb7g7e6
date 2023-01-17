@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SignInForm from '../SignInForm/SignInForm';
+import { useHistory } from 'react-router-dom';
 
 const SignUpForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const history = useHistory();
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -31,6 +33,7 @@ const SignUpForm = () => {
             localStorage.setItem('email', email);
             localStorage.setItem('password', password);
             setError(error);
+            history.push('/login');
           }
     }
 
