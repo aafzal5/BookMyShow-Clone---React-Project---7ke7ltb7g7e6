@@ -1,8 +1,8 @@
 import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import MovieCard from '../MovieCard/MovieCard';
-import './nowPlaying.css';
+import MovieCard from './MovieCard';
+import '../styles/nowPlaying.css';
 
 const NowPlaying = () => {
   const [movies, setMovies] = useState([]);

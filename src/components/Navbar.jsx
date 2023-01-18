@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
-import SearchForm from '../SearchForm/SearchForm';
+import SearchForm from './SearchForm';
+import '../styles/navbar.css';
 
 const Navbar = () => {
   return (
@@ -16,7 +16,7 @@ const Navbar = () => {
         </Link>
         <Link to="/SignInForm">
           <i className="fas fa-user"></i>
-          <span>Username</span>
+          <span>Sign In</span>
         </Link>
       </div>
     </nav>

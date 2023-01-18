@@ -1,5 +1,5 @@
 import React from "react";
-import './movieModal.css';
+import '../styles/movieModal.css';
 
 const MovieModal = ({ movie, setModalOpen }) => {
   return (

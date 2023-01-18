@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Home/Home';
 import '../styles/App.css';
-import SignUpForm from './SignUpForm/SignUpForm';
-import SignInForm from './SignInForm/SignInForm';
+import Home from './Home';
+import SignUpForm from './SignUpForm';
+import SignInForm from './SignInForm';
 
 const App = () => {
 
