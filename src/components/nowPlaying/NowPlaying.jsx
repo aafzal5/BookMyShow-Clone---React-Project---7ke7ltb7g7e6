@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import MovieCard from '../MovieCard/MovieCard';
+import './nowPlaying.css';
 
 const NowPlaying = () => {
   const [movies, setMovies] = useState([]);
@@ -19,7 +20,7 @@ const NowPlaying = () => {
   }, []);
 
   return (
-    <div>
+    <div className='nowPlaying'>
       {movies.slice(0, 5).map((movie, index) => (
         <MovieCard key={index} movie={movie} />
       ))}

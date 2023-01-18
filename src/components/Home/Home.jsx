@@ -6,7 +6,8 @@ import SignUpForm from '../SignUpForm/SignUpForm';
 
 const Home = ()=> {
   return (
-    <>
+    <>  
+        <Navbar/>
         <NowPlaying/>
     </>
   )
