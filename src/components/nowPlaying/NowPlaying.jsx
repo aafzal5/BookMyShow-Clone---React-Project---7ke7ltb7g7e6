@@ -21,6 +21,7 @@ const NowPlaying = () => {
 
   return (
     <div className='nowPlaying'>
+      <h2>Now Playing</h2>
       {movies.slice(0, 5).map((movie, index) => (
         <MovieCard key={index} movie={movie} />
       ))}

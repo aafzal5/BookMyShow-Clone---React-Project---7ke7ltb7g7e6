@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import SignInForm from '../SignInForm/SignInForm';
-import { useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUpForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -29,11 +27,11 @@ const SignUpForm = () => {
           } else if (!password) {
             setError('Password is required');
           } else {
-            localStorage.setItem('name', name);
-            localStorage.setItem('email', email);
-            localStorage.setItem('password', password);
+            localStorage.setItem('name', 'name');
+            localStorage.setItem('email', 'email');
+            localStorage.setItem('password', 'password');
             setError(error);
-            history.push('/login');
+            navigate('/SignInForm');
           }
     }
 
@@ -64,3 +62,50 @@ const SignUpForm = () => {
 }
 
 export default SignUpForm;
+
+// import React, { useState } from 'react';
+// import { Redirect } from 'react-router-dom';
+
+// const SignUpForm = () => {
+//   const [redirect, setRedirect] = useState(false);
+//   const [formData, setFormData] = useState({
+//     email: '',
+//     password: ''
+//   });
+
+//   const handleChange = (event) => {
+//     setFormData({
+//       ...formData,
+//       [event.target.name]: event.target.value
+//     });
+//   }
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     localStorage.setItem('user', JSON.stringify(formData));
+//     setRedirect(true);
+//   }
+
+//   if (redirect) {
+//     return <Redirect to='/signin' />
+//   }
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label>
+//         Email:
+//         <input type="email" name="email" onChange={handleChange} value={formData.email} />
+//       </label>
+//       <br />
+//       <label>
+//         Password:
+//         <input type="password" name="password" onChange={handleChange} value={formData.password} />
+//       </label>
+//       <br />
+//       <input type="submit" value="Sign Up" />
+//     </form>
+//   );
+// }
+
+// export default SignUpForm;
+
