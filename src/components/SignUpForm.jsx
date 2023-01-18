@@ -27,9 +27,9 @@ const SignUpForm = () => {
           } else if (!password) {
             setError('Password is required');
           } else {
-            localStorage.setItem('name', 'name');
-            localStorage.setItem('email', 'email');
-            localStorage.setItem('password', 'password');
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
             setError(error);
             navigate('/SignInForm');
           }
