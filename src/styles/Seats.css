@@ -1,0 +1,26 @@
+.table tbody tr td:not(:first-child) {
+    border: 1px solid blue;
+    width: 1em;
+    height: 1em;
+  }
+  
+  .table tbody tr td:first-child {
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: var(--bg-color--);
+  }
+  .table {
+    color: var(--textColor--);
+    border-spacing: 3em;
+  }
+  .msg {
+    display: none;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }

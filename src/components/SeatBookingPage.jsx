@@ -8,7 +8,7 @@ import './styles.css'
 import React, { useState } from 'react'
 import clsx from 'clsx'
 
-const movies = [
+const Movies = [
   {
     name: 'Avenger',
     price: 10,
