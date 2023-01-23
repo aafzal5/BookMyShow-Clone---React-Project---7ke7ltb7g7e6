@@ -1,37 +1,23 @@
-import React from 'react';
+import React from 'react'
+import '../styles/GenreList.css';
 
-const genres = [
-  'Action',
-  'Adventure',
-  'Animation',
-  'Comedy',
-  'Crime',
-  'Documentry',
-  'Drama',
-  'Family',
-  'Fantasy',
-  'History',
-  'Horror',
-  'Music',
-  'Mystery',
-  'Thriller',
-  'Horror',
-  'Mystery',
-  'Romance',
-  'Science Fiction',
-];
-
-const GenreList = () => {
-  return (
-    <div>
-      <h3>Genres</h3>
-      <ul>
-        {genres.map((genre) => (
-          <li key={genre}>{genre}</li>
-        ))}
+export function GenreList (props) {
+    const unOrderList = (arr) => {
+      return <ul key="unorderedList">
+        {arr.map((item) => {
+          return <li onClick={() => {checkGenresCheck(item)}} key={'li'+item.id} id={item.id} >{item.name}</li>
+        })}
       </ul>
-    </div>
-  );
-};
+    }
 
-export default GenreList;
+    const checkGenresCheck = (argGenres) => {
+      props.newApicall(argGenres);
+    } 
+
+  return (
+    <div className='content'>
+      <h2>{props.heading}</h2>
+      {props.apiData === null ? "" : unOrderList(props.apiData)}
+    </div>
+  )
+}

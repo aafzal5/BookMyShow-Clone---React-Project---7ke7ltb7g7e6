@@ -1,23 +1,23 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import '../styles/App.css';
-import Home from './Home';
-import SignUpForm from './SignUpForm';
-import SignInForm from './SignInForm';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navbar } from "./Navbar";
+import { Home } from "./Home";
+import { WishList } from "./WishList";
+import { Checkout } from "./Checkout";
+import "../styles/App.css";
 
-const App = () => {
-
+const App = ()=> {
   return (
     <div id="main">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' exact element = {<Home/>} />
-          <Route path='/SignUpForm' element = {<SignUpForm/>} />
-          <Route path='/SignInForm' element = {<SignInForm/>} />
-        </Routes>  
-      </BrowserRouter>
+    <BrowserRouter >
+      <Routes>
+        <Route path="/" element={<Home />}  />
+        <Route path="/wishlist" element={<><Navbar/><WishList/></>} />
+        <Route path="/checkout" element={<Checkout/>} />
+      </Routes>
+    </BrowserRouter>
     </div>
-  )
+  );
 }
 
 export default App;

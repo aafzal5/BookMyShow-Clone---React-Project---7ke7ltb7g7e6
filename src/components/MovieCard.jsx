@@ -1,46 +1,29 @@
 import React from "react";
-import { useState } from "react";
-// import MovieModal from './MovieModal';
-import "../styles/MovieCard.css";
+import { apiUrl } from "./API";
+import { FaStar } from "react-icons/fa";
+import noImage from './utills/images/no-image.png';
 
-const MovieCard = ({ movie }) => {
-  const [movieDetails, setMovieDetails] = useState(false);
-
-  const toggleSetMovieDetails = () => {
-    setMovieDetails(!movieDetails);
-  };
-
+export function MovieCard({ item, index }) {
   return (
-    <div className="movie-card" onClick={toggleSetMovieDetails}>
-      <img
-        src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-        alt={movie.title}
-      />
-      <h3>{movie.title}</h3>
-      <p>{movie.overview}</p>
-      {movieDetails && (
-        <div className="modal">
-        <div className="overlay">
-          <div className="modal-content">
-          <button className="close-details">X</button>
-            <img
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-              alt={movie.title}
-            />
-            <h2>{movie.title}</h2>
-            <p>{movie.overview}</p>
-            <p>{movie.rating}</p>
-            <p>{movie.language}</p>
-            <p>{movie.time}</p>
-            <p>{movie.genre}</p>
-            <button className="book-tickets">Book Tickets</button>
-            <button className="wishlist">Wishlist</button>
-          </div>
-        </div>
+    <div className="card">
+      <div className="movieStyleCard">
+        <img
+          className="imageCard"
+          src={item.poster_path === null ? noImage :apiUrl.imageBase + item.poster_path}
+          alt={item.title}
+          key={"image" + index}
+        />
+        <h4 key={"h5" + index}>{item.title}</h4>
       </div>
-      )}
+      <div className="rating">
+        <p key={"LanCard" + index}>
+          {item.original_language.charAt(0).toUpperCase() +
+            item.original_language.slice(1)}
+        </p>
+        <p key={"rateCard" + index}>
+          <FaStar /> {item.vote_average}
+        </p>
+      </div>
     </div>
   );
-};
-
-export default MovieCard;
+}
