@@ -54,11 +54,11 @@ export function MovieDetails(props) {
         />
         <div className="movie-right-container">
           <h3 className="movie-right-container-title">{props.movieDetils.detils.title}</h3>
-          <div>
+          <div className="movie-right-container-rating">
             <FaStar /> {props.movieDetils.detils.vote_average}/10
           </div>
           <div className="movie-card-text">
-            <span>{duration} minutes</span>
+            <span className="movie-card-text-duration">{duration} minutes</span>
             {props.movieDetils.data.map((item, index) => {
               return <span key={"span" + index}>{item.name}</span>;
             })}

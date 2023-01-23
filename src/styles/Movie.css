@@ -89,7 +89,8 @@
 }
 
 .movie-right-container-title {
-    font-size: large;
+    font-size: larger;
+    font-weight: normal;
 }
 
 .movie-styles {
