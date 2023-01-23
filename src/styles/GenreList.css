@@ -1,9 +1,13 @@
 li {
     list-style: none;
     font-size: 1.4rem;
-    margin: 5px;
+    margin: 5px 10px 5px 10px;
     cursor: pointer;
-    
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #F84464;
+    color: white;
 }
 
 li:hover {
@@ -13,12 +17,24 @@ li:hover {
     
 }
 
+li:active{
+    background-color: #333545;
+}
+
+li:focus{
+    background-color: #333545;
+}
+
 ul {
     padding: 0;
     margin: 20px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    border: none;
+    width: 12rem;
+    background-color: #333545;
+    border-radius: 0.5rem;
 }
 
 h2 {

@@ -1,7 +1,22 @@
 .summary-slip {
     height: max-content;
     color: white;
+    border-radius: 0.5rem;
     box-shadow: 1px -2px 4px 0px white;
+    background-color: #333545;
+    font-size: large;
+}
+
+.checkout-back-button{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #F84464;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .eachTicket {
@@ -14,6 +29,7 @@
 }
 .wraper-div {
     margin: 10px;
+    background-color: #333545 ;
 }
 
 .card-name {
@@ -40,6 +56,7 @@
     margin: 5px;
     display: flex;
     flex-direction: column;
+    border-radius: 0.7rem;
 }
 
 .input-fields > label {
@@ -66,7 +83,7 @@
     border: none;
     outline: none;
     width: 10rem;
-    border-radius: 2px;
+    border-radius: 0.5rem;
     margin: 10px 0;
     height: 1.5rem;
 }
@@ -74,29 +91,31 @@
 .checkout-btn {
     width: 60%;
     position: relative;
-    left: 2rem;
-    border-radius: 40px;
+    left: 3.5rem;
+    border: white;
+    border-radius: 0.7rem;
     text-align: center;
-    background-color: rgb(38, 38, 39);
-    height: 2rem;
+    background-color: #F84464;
     color: white;
-    font-weight: 500;
+    font-weight:normal;
+    font-size: medium;
+    padding: 5px;
 }
 
 .checkout-btn:hover {
-    width: 90%;
-    text-align: center;
-    background-color: rgb(19, 135, 236);
-    height: 2rem;
+    background-color: white;
     border: 1px solid rgb(19, 135, 236);
-    border-radius: 5px;
-    color: white;
-    font-weight: 500;
+    color: #F84464;
     box-shadow: 0 0 8px 4px gray;
 }
 
 .form-checkout {
     margin: 10px;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:500px) {

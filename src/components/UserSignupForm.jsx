@@ -87,9 +87,6 @@ export function UserSignUpForm(props) {
   return (
     <div className="wraper-div">
       <form onSubmit={submitHandler} className="login-form">
-        <div className="login-logo">
-          <BsShieldLock style={{  fontSize: "2rem" }} />
-        </div>
         <h3 className="user-heading">Sing Up</h3>
         {infoExist && (
           <div className="warning">Username or email already exists</div>

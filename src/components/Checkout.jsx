@@ -8,7 +8,7 @@ export function Checkout() {
   return (
     <div className="check-out">
       <NavLink to="/">
-        <button>Back</button>
+        <button className="checkout-back-button">Back</button>
       </NavLink>
       <h1 className="checkout-heading">Checkout</h1>
       <div className="wraper-checkout">

@@ -10,17 +10,17 @@ export function Payment() {
       <form className="form" onSubmit={submitHandler}>
         <div className="input-fields user-name-email">
           <div className="input1">
-            <label htmlFor="first-name">First Name</label>
+            <label htmlFor="first-name">First Name : </label>
             <input className="inputs" id="first-name" type="text" />
           </div>
 
           <div className="input1">
-            <label htmlFor="last-name">Last Name</label>
+            <label htmlFor="last-name">Last Name : </label>
             <input className="inputs" id="last-name" type="text" />
           </div>
 
           <div className="input1">
-            <label htmlFor="e-mail">E-mail</label>
+            <label htmlFor="e-mail">E-mail : </label>
             <input className="inputs" id="e-mail" type="text" />
           </div>
         </div>
@@ -34,15 +34,15 @@ export function Payment() {
         </div>
         <div className="card-details">
           <div className="card-name">
-            <label htmlFor="card-holder">Card holder Name</label>
+            <label htmlFor="card-holder">Card holder Name : </label>
             <input className="inputs" id="card-holder" type="text" />
           </div>
           <div className="card-name">
-            <label htmlFor="exp-date">Expiration</label>
+            <label htmlFor="exp-date">Expiration : </label>
             <input className="inputs" id="exp-date" type="text" />
           </div>
           <div className="card-name">
-            <label htmlFor="cvv">CVV</label>
+            <label htmlFor="cvv">CVV : </label>
             <input className="inputs" id="cvv" type="text" />
           </div>
         </div>

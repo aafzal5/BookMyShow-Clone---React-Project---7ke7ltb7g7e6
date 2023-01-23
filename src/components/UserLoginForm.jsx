@@ -62,9 +62,6 @@ export function UserLoginForm(props) {
 
   return (
     <form onSubmit={submitHandler} className="login1 login-form">
-      <div className="login-logo">
-        <BsShieldLock style={{ fontSize: "2rem" }} />
-      </div>
       <h3 className="user-heading">Login</h3>
       {warningMsg && <div className="warning">Username or Password Not Matching</div>}
       <input

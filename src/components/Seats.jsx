@@ -45,10 +45,6 @@ export function Seats(props) {
 
   const submitSeatSelected = () => {
     console.log(typeof(props.BookingDate))
-    // if(props.BookingDate === null){
-    //   setFlag(true);
-    //   return;
-    // }
 
     const ticketDetails = {
         seats : seatState,

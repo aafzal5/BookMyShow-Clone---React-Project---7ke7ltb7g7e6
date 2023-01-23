@@ -4,7 +4,7 @@ import { FaRegHeart, FaUser } from "react-icons/fa";
 import { Overlay } from "./Overlay";
 import { UserInfo } from "./UserInfo";
 import logo from "../images/logo.png";
-import "../styles/NavBar.css";
+import "../styles/Navbar.css";
 
 export const Navbar = (props) => {
   

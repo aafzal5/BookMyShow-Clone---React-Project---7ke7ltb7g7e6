@@ -60,10 +60,10 @@ export function MovieDetails(props) {
           <div className="movie-card-text">
             <span className="movie-card-text-duration">{duration} minutes</span>
             {props.movieDetils.data.map((item, index) => {
-              return <span key={"span" + index}>{item.name}</span>;
+              return <span key={"span" + index}> : {item.name}</span>;
             })}
           </div>
-          <p>{props.movieDetils.detils.overview}</p>
+          <p movie-card-text-details-overview>{props.movieDetils.detils.overview}</p>
           <p>
             <span className="rupee">&#8377;</span>
             {price}

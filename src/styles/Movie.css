@@ -4,12 +4,12 @@
     margin: 10px;
     width: 100%;
     position: relative;
-    right: 7rem;
+    right: 5rem;
     top: 5rem;
 }
 
 .movieCard {
-    margin: 8px;
+    margin: 10px;
     border-radius: 0.7rem;
     border: none;   
     cursor: pointer;
@@ -93,6 +93,16 @@
     font-weight: normal;
 }
 
+.movie-right-container-rating{
+    font-size: larger;
+    font-weight: normal;
+}
+
+.movie-card-text-details-overview{
+    font-size: medium;
+    font-weight: lighter;
+}
+
 .movie-styles {
     display: flex;
     margin: 5px;
@@ -126,7 +136,7 @@ span {
 .movie-styles > img {
     width: 350px;
     height: 350px;
-    margin: 25px 10px 10px 10px;
+    margin: 10px;
     border-radius: 0.5rem;
 }
 
