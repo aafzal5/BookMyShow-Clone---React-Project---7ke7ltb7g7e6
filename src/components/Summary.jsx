@@ -8,7 +8,7 @@ export function Summary(props) {
   return (
     <div className="summary-slip">
       <div className="wraper-div">
-        <h2>Summary</h2>
+        <h2 style={{color: "white",}}>Summary</h2>
         <h4>{props.BookingDetails.name}</h4>
         <div className="eachTicket">
           <span>Classic Ticket  : </span>

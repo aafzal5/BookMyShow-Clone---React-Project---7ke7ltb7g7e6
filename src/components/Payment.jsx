@@ -6,7 +6,9 @@ export function Payment() {
   };
   return (
     <div className="summary summary-slip">
-      <h2>Payment</h2>
+      <center>
+      <h2 style={{color: "white",}}>Payment</h2>
+      </center>
       <form className="form" onSubmit={submitHandler}>
         <div className="input-fields user-name-email">
           <div className="input1">
