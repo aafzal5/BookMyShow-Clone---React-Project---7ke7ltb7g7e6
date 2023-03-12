@@ -1,3 +1,9 @@
+.movie-heading{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
 .main-movie-card {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -38,7 +44,8 @@
     border: none;
     border-radius: 0.7rem;
     flex-grow: 1;
-    height: 100%;
+    height: 420px;
+
     
 }
 
@@ -53,12 +60,14 @@
     margin: 0px 5px 0px 5px;
     color: #fff;
     font-weight: normal;
+    margin-top: auto;
 }
 
 .imageCard {
     width: 100%;
     margin-bottom: 3px;
     border-radius: 0.5rem 0.5rem 0 0 ;
+    max-height: 325px;
 }
 
 .rating {
@@ -70,6 +79,7 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: normal;
+    margin-top: auto;
 }
 
 .rating > p {

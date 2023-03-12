@@ -11,7 +11,7 @@ import "../styles/App.css";
 
 export const UserContex = createContext();
 
-export const Home = ()=> {
+const Home = ()=> {
 
   const [price, setPrice] = useState(null);
   const [apiData, setApiData] = useState(null);
@@ -133,3 +133,5 @@ export const Home = ()=> {
     </>
   );
 }
+
+export default Home;

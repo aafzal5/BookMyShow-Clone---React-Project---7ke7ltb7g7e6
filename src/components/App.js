@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./Navbar";
-import { Home } from "./Home";
+import Home from "./Home";
 import { WishList } from "./WishList";
 import { Checkout } from "./Checkout";
 import "../styles/App.css";
