@@ -93,21 +93,21 @@ export function UserSignUpForm(props) {
         )}
         <input
           type="text"
-          placeholder="User Name*"
+          placeholder="User Name"
           onChange={userInputHandler}
           value={userName}
         />
         {userFlag && <div className="warning">Please Enter User Name</div>}
         <input
           type="email"
-          placeholder="email*"
+          placeholder="email"
           onChange={emailInputHandler}
           value={email}
         />
         {emailFlag && <div className="warning">Please Enter User Name</div>}
         <input
           type="password"
-          placeholder="password*"
+          placeholder="password"
           onChange={passwordInputHandler}
           value={password}
         />

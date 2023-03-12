@@ -52,8 +52,6 @@ export const Home = ()=> {
     nowPlayingList();
   }, []);
 
-  let loginChecking = loginStatus;
-
   const stateUpLift = (arg, arg2) => {
     setStateUp({
       stateUp: arg,

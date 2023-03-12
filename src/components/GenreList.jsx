@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/GenreList.css';
 
-export function GenreList (props) {
+export const GenreList =  (props) => {
     const unOrderList = (arr) => {
       return <ul key="unorderedList">
         {arr.map((item) => {

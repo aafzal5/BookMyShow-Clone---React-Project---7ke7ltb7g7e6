@@ -66,14 +66,14 @@ export function UserLoginForm(props) {
       {warningMsg && <div className="warning">Username or Password Not Matching</div>}
       <input
         type="text"
-        placeholder="User Name *"
+        placeholder="User Name"
         onChange={userInputHandler}
         value={userName}
       />
       {userFlag && <div className="warning">Please enter user name</div>}
       <input
         type="password"
-        placeholder="password*"
+        placeholder="password"
         onChange={passwordInputHandler}
         value={password}
       />

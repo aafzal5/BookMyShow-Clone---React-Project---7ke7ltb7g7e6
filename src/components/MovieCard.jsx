@@ -21,7 +21,7 @@ export function MovieCard({ item, index }) {
             item.original_language.slice(1)}
         </p>
         <p key={"rateCard" + index}>
-          <FaStar /> {item.vote_average}
+          <FaStar style={{color : "yellow"}}/> {item.vote_average}
         </p>
       </div>
     </div>
