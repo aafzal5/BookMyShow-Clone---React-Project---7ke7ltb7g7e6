@@ -3,13 +3,17 @@ import noImage from "./utills/images/no-image.png";
 import { apiUrl } from "./API";
 import { FaStar } from "react-icons/fa";
 
-export function WishListCard(props) {
+export function WishListCard (props) {
     const createGenres = (arr) => {
        return arr.map((item,index)=> {
             return <span key={`span${index}`}>{item.name}</span>
         })
     }
 
+    const handleRemoveItem = () => {
+      props.removeMovieFromWishlist(props.wishData.detils.id);
+    }
+    // console.log(props.wishData.detils.id);
   return (
     <div className="wraper-card" key={`wraper${props.index}`}>
       <img
@@ -28,6 +32,7 @@ export function WishListCard(props) {
       </p>
       <div key={`genres${props.index}`}>{createGenres(props.wishData.data)}</div>
       <p key={`overview${props.index}`}>{props.wishData.detils.overview}</p>
+      <button onClick={handleRemoveItem} >X</button>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
     background-color: #333545;
     border-radius: 0.5rem;
     color: white;
+    /* position: relative; */
 }
 
 .wraper-card > img {

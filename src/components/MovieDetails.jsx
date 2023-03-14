@@ -29,15 +29,12 @@ export function MovieDetails(props) {
   }
 
   const addToWishList = () => {
-    // wishList = JSON.(localStorage.getItem('wishlist'));
-    
     if (
       wishList.some(
         (info) =>
           info.detils.id === props.movieDetils.detils.id
       )
     ) {
-      // setInfoExist(true);
       return;
     } else {
       wishList.push(props.movieDetils);
