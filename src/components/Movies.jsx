@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import "../styles/Movie.css";
 import { Overlay } from "./Overlay";
 import { MovieCard } from "./MovieCard";
 import { MovieDetails } from "./MovieDetails";
 
+import "../styles/Movie.css";
+
 export function Movies(props) {
   const [detailsData, setDetailsData] = useState(null);
   const [overlayFlag, setOverlayFlag] = useState(false);
-  // const genreDataString = localStorage.getItem("genres");
   const genreData = JSON.parse(localStorage.getItem("genres"));
 
   const movieCardEvent = (ids) => {
@@ -52,7 +52,7 @@ export function Movies(props) {
           <MovieDetails stateUpLift2={stateLift2} movieDetils={detailsData} />
         </Overlay>
       )}
-      <h2>{props.heading}</h2>
+      <h2 className="movie-container-heading">{props.heading}</h2>
       {props.apiData === null ? (
         ""
       ) : (
