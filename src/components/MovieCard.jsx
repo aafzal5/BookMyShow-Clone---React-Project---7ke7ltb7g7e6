@@ -13,9 +13,7 @@ export function MovieCard({ item, index }) {
           alt={item.title}
           key={"image" + index}
         />
-        <h4 key={"h5" + index}>{item.title}</h4>
-      </div>
-      <div className="rating">
+        <div className="rating">
         <p key={"LanCard" + index}>
           {item.original_language.charAt(0).toUpperCase() +
             item.original_language.slice(1)}
@@ -24,6 +22,8 @@ export function MovieCard({ item, index }) {
           <FaStar style={{color : "yellow"}}/> {item.vote_average}
         </p>
       </div>
+      </div>
+        <h4 className="movie-title" key={"h5" + index}>{item.title}</h4>
     </div>
   );
 }

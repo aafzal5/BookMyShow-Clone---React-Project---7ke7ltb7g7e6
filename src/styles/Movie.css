@@ -1,36 +1,37 @@
 .movie-container {
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 .movie-container-heading{
-    background-color: #333545;
+    background-color: white;
     width: 100%;
-    color: #fff;
-    margin: 2rem 0 2rem 10px;
-    padding: 10px 0;
+    color: #222222;
+    margin: 42px 0 0 30px;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 1.7rem;
     font-size: 28px;
-    font-weight: normal ;
+    font-weight: 700 ;
 }
 
 .main-movie-card {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin: 10px;
+    margin: 0 15px 15px 15px;
     width: 100%;
 }
 
 .movieCard {
-    margin: 10px;
+    margin: 15px;
     border-radius: 0.7rem;
     border: none;   
     cursor: pointer;
     color: black;
     font-size: 1.5rem;
     transition: box-shadow 0.1s ease-out;
+    width: 216.66px;
     /* max-height: 500px; */
 }
 .movieCard:hover{
@@ -38,37 +39,35 @@
 }
 
 .card{
-    background-color: #333545;
+    background-color: white;
     display: flex;
     flex-direction: column;
     max-width: 15rem;
     border: none;
     border-radius: 0.7rem;
     flex-grow: 1;
-    height: 450px;
-
-    
+    height: 460px;
 }
 
 .movieStyleCard {
-    /* margin: 10px; */
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-.movieStyleCard > h4 {
-    margin: 0px 5px 0px 5px;
-    color: #fff;
-    font-weight: normal;
-    margin-top: auto;
+.movie-title {
+    margin: 0;
+    margin-top: 5px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .imageCard {
-    width: 100%;
-    margin-bottom: 3px;
+    max-width: 216.66px;
+    margin-bottom: 0;
     border-radius: 0.5rem 0.5rem 0 0 ;
-    max-height: 325px;
+    height: 325px;
 }
 
 .rating {
@@ -80,12 +79,17 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: normal;
-    margin-top: auto;
+    margin-top: 0;
+    background-color: #000000;
+    width: 216.66px;
+    padding: 5px 0;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .rating > p {
     margin: 0;
     color: #fff;
+    padding: 0 15px;
 }
 
 .movie-detils {

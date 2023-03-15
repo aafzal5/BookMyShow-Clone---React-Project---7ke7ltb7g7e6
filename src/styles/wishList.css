@@ -1,4 +1,5 @@
 .wraper-card {
+    position: relative;
     display: flex;
     margin: 10px;
     box-shadow: 0 0 3px 3px rgb(49, 49, 49);
@@ -21,4 +22,11 @@
 
 .wrap-wishlist-data {
     margin: 5px;
+}
+
+.remove-card-button{
+    display: inline;
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }

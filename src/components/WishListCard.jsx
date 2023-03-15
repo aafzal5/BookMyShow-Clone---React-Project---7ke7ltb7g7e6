@@ -16,6 +16,7 @@ export function WishListCard (props) {
     // console.log(props.wishData.detils.id);
   return (
     <div className="wraper-card" key={`wraper${props.index}`}>
+      <button className="remove-card-button" onClick={handleRemoveItem} >X</button>
       <img
         src={
          props.wishData.detils.poster_path === null
@@ -32,7 +33,6 @@ export function WishListCard (props) {
       </p>
       <div key={`genres${props.index}`}>{createGenres(props.wishData.data)}</div>
       <p key={`overview${props.index}`}>{props.wishData.detils.overview}</p>
-      <button onClick={handleRemoveItem} >X</button>
       </div>
     </div>
   );
