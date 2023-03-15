@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaRegHeart, FaUser } from "react-icons/fa";
 import { Overlay } from "./Overlay";
 import { UserInfo } from "./UserInfo";
-import logo from "../images/logo.png";
+// import logo from "../images/logo.png";
 import "../styles/Navbar.css";
 
 export const Navbar = (props) => {
@@ -23,14 +23,6 @@ export const Navbar = (props) => {
       fontSize: "1.5rem",
     });
     props.searchMovie(e.target.value);
-  };
-
-  const searchMovieBtn = () => {
-    setStyleIcon({
-      fontSize: "1.5rem",
-    });
-    props.searchMovie(movieName);
-    setMovieName("");
   };
 
   const changeStyleAfterClick = () => {
@@ -74,13 +66,11 @@ export const Navbar = (props) => {
     <div className="styleNavBar">
       <div id="nav-bar">
         <div className="logo">
-          <NavLink to="/">
-            <img
+          <NavLink className='nav-link' to="/">
+            <h1
               className="linkLogo"
-              src={logo}
-              alt="name"
               onClick={clickOnLogo}
-            />
+            >BookMyMovie</h1>
           </NavLink>
         </div>
         <div className="right-side">
@@ -88,16 +78,10 @@ export const Navbar = (props) => {
             <input
               type="text"
               className="searchBar scarchClass"
-              placeholder="Search for Movies"
+              placeholder="Search for Movies . . ."
               value={movieName}
               onChange={searchTheMovieName}
             />
-            <button
-              className="searchButton scarchClass"
-              onClick={searchMovieBtn}
-            >
-              Search
-            </button>
           </div>
           <div className="login-wraper">
             <NavLink to="/wishlist">
@@ -105,7 +89,9 @@ export const Navbar = (props) => {
                 className="favorite giveSameStyle"
                 onClick={changeStyleAfterClick}
               >
-                <FaRegHeart style={{fontSize: "1.5rem", color: "white",}} />
+                <FaRegHeart 
+                  style={{fontSize: "1.5rem", color: "white",}}
+                />
               </div>
             </NavLink>
 
