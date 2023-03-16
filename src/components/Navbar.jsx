@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaRegHeart, FaUser } from "react-icons/fa";
 import { Overlay } from "./Overlay";
 import { UserInfo } from "./UserInfo";
-// import logo from "../images/logo.png";
+
 import "../styles/Navbar.css";
 
 export const Navbar = (props) => {
