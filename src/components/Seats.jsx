@@ -5,7 +5,7 @@ import '../styles/TicketsBooking.css';
 
 export function Seats(props) {
     const price = useContext(UserContex)
-    const [flag,setFlag] = useState(false);
+    // const [flag,setFlag] = useState(false);
   let styleSeat = props.Seats.map((item, index, arr) => {
     return arr.map((i) => {
       return {
@@ -56,9 +56,9 @@ export function Seats(props) {
     sessionStorage.setItem('BookingDetails',JSON.stringify(ticketDetails))
 }
 
-  const overlayFlagCheck = () => {
-    setFlag(false);
-  }
+  // const overlayFlagCheck = () => {
+  //   setFlag(false);
+  // }
 
   return (
     <>
