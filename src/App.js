@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar } from "./Navbar";
-import Home from "./Home";
-import { WishList } from "./WishList";
-import { Checkout } from "./Checkout";
-import "../styles/App.css";
+import { Navbar } from "./components/Navbar";
+import Home from "./components/Home";
+import { WishList } from "./components/WishList";
+import { Checkout } from "./components/Checkout";
+import "./App.css";
 
 const App = ()=> {
   return (

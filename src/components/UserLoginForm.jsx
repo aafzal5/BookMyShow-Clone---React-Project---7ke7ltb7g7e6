@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BsShieldLock } from "react-icons/bs";
 import "../styles/UserStyle.css";
 
 export function UserLoginForm(props) {

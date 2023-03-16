@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { UserLoginForm } from "./UserLoginForm";
-import { UserSignUpForm } from "./UserSignUpForm";
+import { UserSignUpForm } from "./UserSignupForm";
 
 export function UserInfo(props) {
   const [loginOrSignUp, setLoginOrSignUp] = useState(false);

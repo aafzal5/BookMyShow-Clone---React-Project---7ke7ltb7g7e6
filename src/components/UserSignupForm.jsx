@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BsShieldLock } from "react-icons/bs";
 
 export function UserSignUpForm(props) {
   const [userName, setUserName] = useState("");
