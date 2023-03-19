@@ -93,10 +93,13 @@
     padding: 0 15px;
 }
 
+/* Movie details section */
+
 .movie-detils {
     background-color: #fff;
     font-family: 'Poppins';
     /* border-radius: 0.7rem; */
+    /* max-height: 450px; */
 }
 
 .movie-right-container-title {
@@ -118,6 +121,8 @@
     display: flex;
     margin: 5px;
     background-color: #333545;
+    max-width: 675px;
+    max-height: 450px;
 }
 
 span {

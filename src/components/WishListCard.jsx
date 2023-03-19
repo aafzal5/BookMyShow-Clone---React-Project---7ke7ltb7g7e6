@@ -27,12 +27,12 @@ export function WishListCard (props) {
         key={`img${props.index}`}
       />
       <div className="wrap-wishlist-data" key={`div${props.index}`}>
-      <h3 key={`title-wish${props.index}`}>{props.wishData.detils.title}</h3>
-      <p key={`ptag${props.index}`}>
+      <h3 className="wishlist-title" key={`title-wish${props.index}`}>{props.wishData.detils.title}</h3>
+      <p className="wishlist-rating" key={`ptag${props.index}`}>
       <FaStar style={{color : "yellow"}} /> {props.wishData.detils.vote_average}/10
       </p>
-      <div key={`genres${props.index}`}>{createGenres(props.wishData.data)}</div>
-      <p key={`overview${props.index}`}>{props.wishData.detils.overview}</p>
+      <div className="wishlist-genre" key={`genres${props.index}`}>{createGenres(props.wishData.data)}</div>
+      <p className="wishlist-overview" key={`overview${props.index}`}>{props.wishData.detils.overview}</p>
       </div>
     </div>
   );

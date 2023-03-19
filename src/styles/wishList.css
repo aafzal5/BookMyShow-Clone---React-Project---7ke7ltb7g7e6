@@ -6,6 +6,9 @@
     background-color: #333545;
     border-radius: 0.5rem;
     color: white;
+    max-width: 663px;
+    max-height: 310px;
+    overflow: hidden;
     /* position: relative; */
 }
 
@@ -21,7 +24,8 @@
 }
 
 .wrap-wishlist-data {
-    margin: 5px;
+    margin: 0 0 0 5px;
+    overflow: hidden;
 }
 
 .remove-card-button{
@@ -29,4 +33,29 @@
     position: absolute;
     right: 5px;
     top: 5px;
+    background-color: #F84464;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 3px 7px;
 }
+
+.wishlist-title{
+    margin: 10px 0 0 0;
+}
+
+.wishlist-rating{
+    margin: 10px 0 0 0;
+}
+
+.wishlist-genre{
+    margin: 10px 0 0 0;
+    padding-left: 0;
+}
+
+.wishlist-overview{
+    margin: 10px 0 0 0;
+    overflow: hidden;
+}
+

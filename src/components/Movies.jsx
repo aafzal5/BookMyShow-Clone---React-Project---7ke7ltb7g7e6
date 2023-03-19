@@ -3,7 +3,7 @@ import { Overlay } from "./Overlay";
 import { MovieCard } from "./MovieCard";
 import { MovieDetails } from "./MovieDetails";
 
-import "../styles/Movie.css";
+// import "../styles/Movie.css";
 
 export function Movies(props) {
   const [detailsData, setDetailsData] = useState(null);
