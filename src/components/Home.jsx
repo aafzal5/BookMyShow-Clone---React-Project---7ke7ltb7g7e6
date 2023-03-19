@@ -7,7 +7,7 @@ import { apiUrl } from "./API";
 import { Overlay } from "./Overlay";
 import apicalls from "./utills/apicalls";
 import { UserValidation } from "./UserValidation";
-// import "../App.css";
+import "../App.css";
 
 export const UserContex = createContext();
 

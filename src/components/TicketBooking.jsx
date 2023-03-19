@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Screen } from "./Screen";
 import { Seats } from "./Seats";
-// import '../styles/TicketsBooking.css';
+import '../styles/TicketsBooking.css';
 
 const theaterName = ["PVR Cinema", "Metro INOX Cinema", "Cinepolis"];
 const showTime = ["10:15", "12:45", "3:15", "5:45"];
