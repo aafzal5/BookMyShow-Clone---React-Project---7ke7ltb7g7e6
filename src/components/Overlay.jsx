@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Overlay.css";
+import "../styles/OverlayStyle.css";
 
 export function Overlay(props) {
   const checkForOverlay = (e) => {

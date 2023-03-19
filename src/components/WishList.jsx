@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { WishListCard } from "./WishListCard";
-import "../styles/WishList.css";
+import "../styles/WishListStyle.css";
 
 export function WishList() {
   const [wishlist, setWishlist] = useState([]);

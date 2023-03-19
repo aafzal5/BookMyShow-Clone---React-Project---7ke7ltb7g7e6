@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/GenreList.css';
+import '../styles/GenreListStyle.css';
 
 export const GenreList =  (props) => {
     const unOrderList = (arr) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/TicketsBooking.css';
+import '../styles/TicketsBookingStyle.css';
 import screen from './utills/images/screen.png';
 
 export function Screen() {

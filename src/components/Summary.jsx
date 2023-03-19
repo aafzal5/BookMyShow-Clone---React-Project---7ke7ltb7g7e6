@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Checkout.css";
+import "../styles/CheckoutStyle.css";
 
 export function Summary(props) {
   const totalTicketPrice =

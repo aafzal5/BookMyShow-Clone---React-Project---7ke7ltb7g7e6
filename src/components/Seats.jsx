@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom"
 import { UserContex } from "./Home";
-import '../styles/TicketsBooking.css';
+import '../styles/TicketsBookingStyle.css';
 
 export function Seats(props) {
     const price = useContext(UserContex)
