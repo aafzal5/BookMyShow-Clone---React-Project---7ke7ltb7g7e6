@@ -34,7 +34,7 @@
 
 .card-name {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin: 10px;
 }
 
@@ -57,10 +57,11 @@
     display: flex;
     flex-direction: column;
     border-radius: 0.7rem;
+    justify-content: space-around;
 }
 
 .input-fields > label {
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .user-name-email {
