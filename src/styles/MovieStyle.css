@@ -105,9 +105,10 @@
 .movie-right-container-title {
     font-size: larger;
     font-weight: normal;
+    margin: 15px 0 10px 0 ;
 }
 
-.movie-right-container-rating{
+.movie-right-container-rating {
     font-size: larger;
     font-weight: normal;
 }
@@ -115,22 +116,27 @@
 .movie-card-text-details-overview{
     font-size: medium;
     font-weight: lighter;
+    margin: 10px 0;
 }
 
 .movie-styles {
     display: flex;
     margin: 5px;
     background-color: #333545;
-    max-width: 675px;
-    max-height: 450px;
+    max-width: 775px;
+    max-height: 475px;
 }
 
 span {
-    margin: 10px 5px;
+    margin-top: 15px;
+}
+
+.rupee{
+    font-size: larger;
 }
 
 .buy-wishlist > button {
-    margin: 20px 20px 20px 0;
+    margin: 0 20px 20px 0;
     cursor: pointer;
     background-color: #F84464;
     color: #fff;

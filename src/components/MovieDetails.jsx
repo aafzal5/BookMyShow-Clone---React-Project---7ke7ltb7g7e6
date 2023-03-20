@@ -60,7 +60,7 @@ export function MovieDetails(props) {
               return <span key={"span" + index}> : {item.name}</span>;
             })}
           </div>
-          <p movie-card-text-details-overview>{props.movieDetils.detils.overview}</p>
+          <p className="movie-card-text-details-overview" >{props.movieDetils.detils.overview}</p>
           <p>
             <span className="rupee">&#8377;</span>
             {price}
