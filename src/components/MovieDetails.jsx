@@ -7,8 +7,8 @@ import noImage from './utills/images/no-image.png'
 
 export function MovieDetails(props) {
   const [duration, SetDuration] = useState(null);
-  const [price,setPrice] = useState(Math.floor(Math.random() * (300 - 250 + 1)) + 250)
   const url = `${apiUrl.base}movie/${props.movieDetils.detils.id}?api_key=${apiUrl.key}`;
+  const price = Math.floor(Math.random() * (300 - 250 + 1)) + 250;
 
   useEffect(() => {
     const getMovieDuration = async () => {

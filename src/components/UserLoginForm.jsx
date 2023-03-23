@@ -39,7 +39,9 @@ export function UserLoginForm(props) {
           {if((info.userName === storeToLocal.userName) && (info.password === storeToLocal.password)){
             data = info;
             return true;
-          }}
+          }
+          return false;
+        }
         )
       ) {
         props.stateUpLisft(data.userName);

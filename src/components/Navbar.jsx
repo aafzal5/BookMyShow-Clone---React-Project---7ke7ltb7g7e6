@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { FaRegHeart, FaUser } from "react-icons/fa";
 import { Overlay } from "./Overlay";
 import { UserInfo } from "./UserInfo";
-
 import "../styles/NavbarStyle.css";
 
 export const Navbar = (props) => {
@@ -17,12 +16,12 @@ export const Navbar = (props) => {
     name: "Sign Up",
   };
 
-  const searchTheMovieName = (e) => {
-    setMovieName(e.target.value);
-    setStyleIcon({
-      fontSize: "1.5rem",
-    });
-    props.searchMovie(e.target.value);
+  const searchTheMovieName =  (name) => {
+    setMovieName(name);
+    // setStyleIcon({
+    //   fontSize: "1.5rem",
+    // });
+    props.searchMovie(name);
   };
 
   const changeStyleAfterClick = () => {
@@ -80,7 +79,7 @@ export const Navbar = (props) => {
               className="searchBar scarchClass"
               placeholder="Search for Movies . . ."
               value={movieName}
-              onChange={searchTheMovieName}
+              onChange={(e)=>searchTheMovieName(e.target.value)}
             />
           </div>
           <div className="login-wraper">

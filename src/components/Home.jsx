@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
+import { debounce } from "lodash";
 import { GenreList } from "./GenreList";
 import { Movies } from "./Movies";
 import { Navbar } from "./Navbar";
@@ -95,17 +96,16 @@ const Home = ()=> {
     getByGenresID()
   }
 
-  const apiCallForSearch = (search) => {
+  const apiCallForSearch = debounce((search) => {
     const searchMovieApiCall = async () => {
       const mavieName = await apicalls(`${apiUrl.base}search/movie?api_key=${apiUrl.key}&page=1&query=${search}`);
       setPlayNowList(mavieName.data.results);
-      setMovieHeading("Search Result")
+      setMovieHeading(`Search Results for : ${search}`);
     }
     if(search.length !== 0){
-      searchMovieApiCall()
+      searchMovieApiCall();
     }
-  
-  }
+  }, 1000)
   
   return (
     <>
