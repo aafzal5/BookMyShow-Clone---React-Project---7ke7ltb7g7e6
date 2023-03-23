@@ -27,6 +27,14 @@ const Home = ()=> {
   const [loginStatus, setLoginStatus] = useState(false);
   const [movieHeading,setMovieHeading] = useState('Now Playing');
 
+  const nowPlayingList = async () => {
+    const getData = await apicalls(
+      `${apiUrl.base}${apiUrl.nowPlaying}?api_key=${apiUrl.key}&page=1`
+    );
+    localStorage.setItem("movie", JSON.stringify(getData.data.results));
+    setPlayNowList(getData.data.results);
+};
+
   useEffect(() => {
     const genresList = async () => {
       if (localStorage.getItem("genres") === null) {
@@ -40,17 +48,11 @@ const Home = ()=> {
         setApiData(JSON.parse(currentData));
       }
     };
-    
+
     genresList();
 
-    const nowPlayingList = async () => {
-        const getData = await apicalls(
-          `${apiUrl.base}${apiUrl.nowPlaying}?api_key=${apiUrl.key}&page=1`
-        );
-        localStorage.setItem("movie", JSON.stringify(getData.data.results));
-        setPlayNowList(getData.data.results);
-    };
     nowPlayingList();
+
   }, []);
 
   const stateUpLift = (arg, arg2) => {
@@ -104,6 +106,9 @@ const Home = ()=> {
     }
     if(search.length !== 0){
       searchMovieApiCall();
+    }else{
+      nowPlayingList();
+      setMovieHeading('Now Playing');
     }
   }, 1000)
   
