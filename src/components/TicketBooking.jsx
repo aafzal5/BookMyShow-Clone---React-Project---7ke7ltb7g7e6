@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Screen } from "./Screen";
-import { Seats } from "./Seats";
+import Screen from "./Screen";
+import Seats from "./Seats";
 import '../styles/TicketsBookingStyle.css';
 
 const theaterName = ["PVR Cinema", "Metro INOX Cinema", "Cinepolis"];
 const showTime = ["10:15", "12:45", "3:15", "5:45"];
 const theaterSeats = ["0","1","2","3","4","5","6","7","8","9"];
 
-export function TicketBooking(props) {
+const TicketBooking = (props) => {
 
   const [date,setDate] = useState(null);
   
@@ -56,4 +56,6 @@ export function TicketBooking(props) {
       </div>
     </div>
   );
-}
+};
+
+export default TicketBooking;

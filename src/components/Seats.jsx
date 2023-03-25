@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 import { UserContex } from "./Home";
 import '../styles/TicketsBookingStyle.css';
 
-export function Seats(props) {
+const Seats = (props) => {
     const price = useContext(UserContex)
     // const [flag,setFlag] = useState(false);
   let styleSeat = props.Seats.map((item, index, arr) => {
@@ -79,4 +79,6 @@ export function Seats(props) {
       </div>
     </>
   );
-}
+};
+
+export default Seats;

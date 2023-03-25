@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/UserStyleStyle.css";
 
-export function UserLoginForm(props) {
+const UserLoginForm = (props) => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [userFlag, setUserFlag] = useState(false);
@@ -82,4 +82,6 @@ export function UserLoginForm(props) {
       <button type="submit">Login</button>
     </form>
   );
-}
+};
+
+export default UserLoginForm;

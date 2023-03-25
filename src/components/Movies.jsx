@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Overlay } from "./Overlay";
-import { MovieCard } from "./MovieCard";
-import { MovieDetails } from "./MovieDetails";
+import Overlay from "./Overlay";
+import MovieCard from "./MovieCard";
+import MovieDetails from "./MovieDetails";
 
 import "../styles/MovieStyle.css";
 
-export function Movies(props) {
+const Movies = (props) => {
   const [detailsData, setDetailsData] = useState(null);
   const [overlayFlag, setOverlayFlag] = useState(false);
   const genreData = JSON.parse(localStorage.getItem("genres"));
@@ -60,4 +60,6 @@ export function Movies(props) {
       )}
     </div>
   );
-}
+};
+
+export default Movies;

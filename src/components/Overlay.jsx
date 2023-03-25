@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/OverlayStyle.css";
 
-export function Overlay(props) {
+const Overlay = (props) => {
   const checkForOverlay = (e) => {
     e.stopPropagation();
     props.functionCall();
@@ -18,3 +18,5 @@ export function Overlay(props) {
     </div>
   );
 }
+
+export default Overlay;

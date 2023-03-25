@@ -3,9 +3,9 @@ import axios from "axios";
 async function apicalls(url) {
   try {
     const res = await axios.get(url);
-  return res;
+      return res;
   } catch (error) {
-    return true;
+      return true;
   }
 }
 

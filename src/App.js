@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import { WishList } from "./components/WishList";
-import { Checkout } from "./components/Checkout";
+import WishList from "./components/WishList";
+import Checkout from "./components/Checkout";
 import "./App.css";
 
-const App = ()=> {
+const App = () => {
   return (
     <div id="main">
     <BrowserRouter >

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/GenreListStyle.css';
 
-export const GenreList =  (props) => {
+const GenreList =  (props) => {
     const unOrderList = (arr) => {
       return <ul key="unorderedList">
         {arr.map((item) => {
@@ -20,4 +20,6 @@ export const GenreList =  (props) => {
       {props.apiData === null ? "" : unOrderList(props.apiData)}
     </div>
   )
-}
+};
+
+export default GenreList;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Payment() {
+const Payment = () => {
   const submitHandler = (e) => {
     e.preventDefault();
   };
@@ -56,4 +56,6 @@ export function Payment() {
       </form>
     </div>
   );
-}
+};
+
+export default Payment;

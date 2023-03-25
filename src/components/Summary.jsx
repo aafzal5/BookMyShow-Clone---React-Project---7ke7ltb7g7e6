@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/CheckoutStyle.css";
 
-export function Summary(props) {
+const Summary = (props) => {
   const totalTicketPrice =
     Number(props.BookingDetails.price) * Number(props.BookingDetails.noSeats);
   const tax =  (totalTicketPrice * 0.0175).toFixed(2);
@@ -41,4 +41,6 @@ export function Summary(props) {
       </div>
     </div>
   );
-}
+};
+
+export default Summary;

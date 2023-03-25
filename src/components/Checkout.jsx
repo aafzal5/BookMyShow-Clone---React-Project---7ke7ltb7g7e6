@@ -1,9 +1,9 @@
 import React from "react";
-import { Payment } from "./Payment";
-import { Summary } from "./Summary";
 import { NavLink } from "react-router-dom";
+import Payment from "./Payment";
+import Summary from "./Summary";
 
-export function Checkout() {
+const Checkout = () => {
   const ticketDetails = JSON.parse(sessionStorage.getItem("BookingDetails"));
   return (
     <div className="check-out">
@@ -17,4 +17,6 @@ export function Checkout() {
       </div>
     </div>
   );
-}
+};
+
+export default Checkout;

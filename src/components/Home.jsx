@@ -1,18 +1,18 @@
 import React, { createContext, useEffect, useState } from "react";
 import { debounce } from "lodash";
-import { GenreList } from "./GenreList";
-import { Movies } from "./Movies";
-import { Navbar } from "./Navbar";
-import { TicketBooking } from "./TicketBooking";
-import { apiUrl } from "./API";
-import { Overlay } from "./Overlay";
+import GenreList from "./GenreList";
+import Movies from "./Movies";
+import Navbar from "./Navbar";
+import TicketBooking from "./TicketBooking";
+import apiUrl from "./API";
+import Overlay from "./Overlay";
 import apicalls from "./utills/apicalls";
-import { UserValidation } from "./UserValidation";
+import UserValidation from "./UserValidation";
 import "../App.css";
 
 export const UserContex = createContext();
 
-const Home = ()=> {
+const Home = () => {
 
   const [price, setPrice] = useState(null);
   const [apiData, setApiData] = useState(null);

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { apiUrl } from './API';
 import { FaStar } from "react-icons/fa";
 import apicalls from "./utills/apicalls";
 import noImage from './utills/images/no-image.png'
+import apiUrl from './API';
 
 
-export function MovieDetails(props) {
+const MovieDetails = (props) => {
   const [duration, SetDuration] = useState(null);
   const url = `${apiUrl.base}movie/${props.movieDetils.detils.id}?api_key=${apiUrl.key}`;
   const price = Math.floor(Math.random() * (300 - 250 + 1)) + 250;
@@ -73,4 +73,6 @@ export function MovieDetails(props) {
       </div>
     </div>
   );
-}
+};
+
+export default MovieDetails;

@@ -1,9 +1,9 @@
 import React from "react";
-import noImage from "./utills/images/no-image.png";
-import { apiUrl } from "./API";
 import { FaStar } from "react-icons/fa";
+import noImage from "./utills/images/no-image.png";
+import apiUrl from "./API";
 
-export function WishListCard (props) {
+const WishListCard = (props) => {
     const createGenres = (arr) => {
        return arr.map((item,index)=> {
             return <span key={`span${index}`}>{item.name}</span>
@@ -36,4 +36,6 @@ export function WishListCard (props) {
       </div>
     </div>
   );
-}
+};
+
+export default WishListCard;

@@ -1,9 +1,9 @@
 import React from "react";
-import { apiUrl } from "./API";
 import { FaStar } from "react-icons/fa";
 import noImage from './utills/images/no-image.png';
+import apiUrl from "./API";
 
-export function MovieCard({ item, index }) {
+const MovieCard = ({ item, index }) => {
   return (
     <div className="card">
       <div className="movieStyleCard">
@@ -27,3 +27,5 @@ export function MovieCard({ item, index }) {
     </div>
   );
 }
+
+export default MovieCard;

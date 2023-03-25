@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaRegHeart, FaUser } from "react-icons/fa";
-import { Overlay } from "./Overlay";
-import { UserInfo } from "./UserInfo";
+import Overlay from "./Overlay";
+import UserInfo from "./UserInfo";
 import "../styles/NavbarStyle.css";
 
-export const Navbar = (props) => {
+const Navbar = (props) => {
   
   const [movieName, setMovieName] = useState("");
   const [styleIcon, setStyleIcon] = useState({ fontSize: "1.5rem" });
@@ -110,4 +110,6 @@ export const Navbar = (props) => {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;

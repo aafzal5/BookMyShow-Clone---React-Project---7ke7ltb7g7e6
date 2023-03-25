@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { UserLoginForm } from "./UserLoginForm";
-import { UserSignUpForm } from "./UserSignupForm";
+import UserLoginForm from "./UserLoginForm";
+import UserSignUpForm from "./UserSignupForm";
 
-export function UserInfo(props) {
+const UserInfo = (props) => {
   const [loginOrSignUp, setLoginOrSignUp] = useState(false);
   const checkForLoginOrSignUp = () => {
     setLoginOrSignUp(true);
@@ -27,4 +27,6 @@ export function UserInfo(props) {
       )}
     </>
   );
-}
+};
+
+export default UserInfo;

@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
-import { WishListCard } from "./WishListCard";
+import WishListCard from "./WishListCard";
 import "../styles/WishListStyle.css";
 
-export function WishList() {
+const WishList = () => {
   const [wishlist, setWishlist] = useState([]);
 
   useEffect(() => {
@@ -38,4 +38,6 @@ export function WishList() {
     }
   };
   return <div className="wrapper-wishlist">{createWishList(wishlist)}</div>;
-}
+};
+
+export default WishList;
